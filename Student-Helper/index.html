@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Helper 🎓</h1>
+        <p>Your personal study partner</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome, Student!</h2>
+            <p>Plan your day, complete your tasks, and achieve your goals.</p>
+        </section>
+
+        <section class="features">
+             <div class="card">
+    <h3>📚 My Subjects</h3>
+    <p>Organize your subjects.</p>
+
+    <input type="text" id="subjectInput" placeholder="Enter subject name">
+
+    <button onclick="addSubject()">Add Subject</button>
+
+    <ul id="subjectList"></ul>
+</div>
+
+            <div class="card">
+    <h3>✅ My Tasks</h3>
+    <p>Manage your daily tasks.</p>
+
+    <input type="text" id="taskInput" placeholder="Enter your task">
+
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+            <div class="card">
+    <h3>📅 My Timetable</h3>
+    <p>Plan your study time.</p>
+
+    <input type="text" id="timeSubject" placeholder="Subject name">
+
+    <input type="time" id="studyTime">
+
+    <button onclick="addSchedule()">Add Schedule</button>
+
+    <ul id="scheduleList"></ul>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by a Student | Student Helper</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
